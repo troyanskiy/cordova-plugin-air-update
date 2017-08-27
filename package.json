@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-air-update",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cordova / Phonegap plugin for AirUpdate application",
   "main": "www/AirUpdate.js",
   "scripts": {
