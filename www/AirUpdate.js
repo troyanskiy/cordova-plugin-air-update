@@ -7,6 +7,8 @@ var initialVersion = '';
 
 var activeChannel = null;
 
+var cordovaHTTP = cordova.plugin.http;
+
 exports.init = function (codeDef) {
   return readFile(cordova.file.applicationDirectory + 'config.xml')
     .then(function (data) {
