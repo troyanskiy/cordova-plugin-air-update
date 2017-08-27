@@ -33,7 +33,7 @@
       "name": "cordova",
       "version": ">=4.0.0"
   }],
-  "author": "Raman Rasliuk",
+  "author": "Raman Rasliuk <roma@redbox.by>",
   "license": "MIT",
   "devDependencies": {
     "cordova": "7.0.1"
