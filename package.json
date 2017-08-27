@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-air-update",
+  "version": "0.0.2",
+  "description": "Cordova / Phonegap plugin for AirUpdate application",
+  "main": "www/AirUpdate.js",
+  "scripts": {
+
+  },
+  "cordova": {
+    "id": "cordova-plugin-air-update",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "device",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "deploy",
+    "update",
+    "airupdate",
+    "publish"
+  ],
+  "engines": [{
+      "name": "cordova",
+      "version": ">=4.0.0"
+  }],
+  "author": "Raman Rasliuk",
+  "license": "MIT",
+  "devDependencies": {
+    "cordova": "7.0.1"
+  }
+}

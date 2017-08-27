@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-air-update" version="0.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+  <name>AirUpdate</name>
+  <description>
+    Cordova / Phonegap plugin for AirUpdate application
+  </description>
+
+  <engines>
+    <engine name="cordova" version=">=4.0.0" />
+  </engines>
+
+  <dependency id="cordova-plugin-file" version=">=4.3.3" />
+  <dependency id="cordova-plugin-advanced-http" version=">=1.5.9" />
+  <dependency id="cordova-plugin-zip" version=">=3.1.0" />
+
+  <js-module name="AirUpdate" src="www/AirUpdate.js">
+    <clobbers target="AirUpdate"/>
+  </js-module>
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="AirUpdate">
+        <param name="ios-package" value="AirUpdate"/>
+      </feature>
+    </config-file>
+    <source-file src="src/ios/AirUpdate.swift"/>
+  </platform>
+</plugin>
