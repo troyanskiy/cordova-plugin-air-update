@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-air-update",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Cordova / Phonegap plugin for AirUpdate application",
   "main": "www/AirUpdate.js",
   "scripts": {
@@ -22,6 +22,13 @@
     "airupdate",
     "publish"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/troyanskiy/cordova-plugin-air-update.git"
+  },
+  "bugs": {
+    "url": "https://github.com/troyanskiy/cordova-plugin-air-update/issues"
+  },
   "engines": [{
       "name": "cordova",
       "version": ">=4.0.0"
