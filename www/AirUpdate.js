@@ -114,7 +114,7 @@ exports.getLatestServerVersion = function () {
  */
 exports.getCurrentLocalVersion = function () {
 
-  readFile(getPathRoot() + 'current.json')
+  return readFile(getPathRoot() + 'current.json')
     .then(function (data) {
       data = JSON.parse(data);
       return data.version;
