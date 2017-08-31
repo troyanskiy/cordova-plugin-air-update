@@ -100,8 +100,7 @@ exports.getLatestServerVersion = function () {
 
   return requestGet(url, 'GET')
     .then(function (data) {
-      var dataJson = JSON.parse(data.data);
-      return dataJson.version;
+      return JSON.parse(data.data);
     })
     .catch(function (err) {
       return null;
@@ -115,12 +114,12 @@ exports.getLatestServerVersion = function () {
 exports.getCurrentLocalVersion = function () {
 
   return readFile(getPathRoot() + 'current.json')
-    .then(function (data) {
-      data = JSON.parse(data);
-      return data.version;
-    })
+    .then(JSON.parse)
     .catch(function () {
-      return initialVersion;
+      return {
+        version: initialVersion,
+        filesMap: null
+      };
     });
 
 };
